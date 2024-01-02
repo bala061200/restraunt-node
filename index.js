@@ -109,4 +109,9 @@ app.post('/user/create/copy', async (req, res, next) => {
 })
 
 
+app.get('/', async (req, res, next) => {
+  res.status(400).json({ message: "success" })
+})
+
+
 app.listen(PORT, () => console.log("server listening"))
