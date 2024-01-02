@@ -15,8 +15,8 @@ const crypto = require('crypto');
 const mongoose = require("mongoose")
 
 
-const db1URL = "mongodb+srv://balakrishnan:7sqYVMYWU0Z3HBI8@cluster0.10tzniz.mongodb.net/Restraunt_1?retryWrites=true&w=majority"
-const db2URL = "mongodb+srv://balakrishnan:7sqYVMYWU0Z3HBI8@cluster0.10tzniz.mongodb.net/Restraunt_2?retryWrites=true&w=majority"
+const db1URL = "mongodb+srv://balakrishnan061200:y8ME885bBIabawPA@cluster0.ilrk2s7.mongodb.net/Restraunt_1?retryWrites=true&w=majority"
+const db2URL = "mongodb+srv://balakrishnan061200:y8ME885bBIabawPA@cluster0.ilrk2s7.mongodb.net/Restraunt_2?retryWrites=true&w=majority"
 
 const db1 = mongoose.createConnection(db1URL);
 const db2 = mongoose.createConnection(db2URL);
