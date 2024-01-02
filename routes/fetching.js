@@ -20,7 +20,7 @@ router.get("/real", async (req, res) => {
 
     res.send(user);
   } catch (err) {
-    console.log("errorrrrr",err)
+    console.log("Error ",err)
     res.status(400).json({msg:"Error at catch"});
   }
 });
