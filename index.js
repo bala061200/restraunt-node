@@ -69,6 +69,7 @@ app.post('/user/create', async (req, res, next) => {
 
 app.get('/user/list/real', async (req, res, next) => {
   try {
+    console.log("Enter into list real data")
     const realdata = await User1.find()
     res.status(200).send(realdata)
   } catch (Eror) {
