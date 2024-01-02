@@ -1,0 +1,20 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "./generated/client1"
+  previewFeatures = ["multiSchema"]
+}
+
+datasource db1 {
+  provider = "mongodb"
+  url      = env("MONGODB_URL_1")
+}
+
+model User {
+  id        String   @id @default(auto()) @map("_id") @db1.ObjectId
+  firstname String?
+  lastname  String?
+  email     String   @unique
+  createdAt DateTime @default(now())
+
+  @@map("Restraunt1")
+}
